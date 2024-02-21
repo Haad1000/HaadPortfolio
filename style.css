@@ -1,7 +1,3 @@
-li {
-    margin: 1vw;
-}
-
-#homepage {
-    margin: 1vw;
+nav {
+    display: flex;
 }
