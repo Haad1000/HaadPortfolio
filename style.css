@@ -1,4 +1,7 @@
-/* body {
+body {
     padding-top: 70px;
-} */
+}
 
+#leButton {
+    align-self: flex-end;
+}

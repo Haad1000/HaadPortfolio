@@ -14,60 +14,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-theme="light">
+<body data-bs-theme="dark">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" type="button"
+            data-bs-toggle="dropdown">
+            <span class="bi bi-moon-stars-fill"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center">
+                    <span class="bi bi-sun-fill"> Light</span>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center">
+                    <span class="bi bi-moon-stars-fill"> Dark</span>
+                </button>
+            </li>
+        </ul>
+    </div>
 
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div class="container-fluid">
-
             <a class="navbar-brand bi bi-house-door-fill" href="#">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropDown">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarDropDown">
-
                 <ul class="navbar-nav ms-auto">
-
                     <li class="nav-item">
-                        <a class="nav-link"href="#About_Me">About Me</a>
+                        <a class="nav-link" href="#About_Me">About Me</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">Skills</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Me</a>
                     </li>
-
                 </ul>
-
             </div>
-            
         </div>
-
     </nav>
 
     <div id="About_Me">
-        <div class="card mb-3" style="padding: 20px;">
-            <div class="row g-0">
-              <div class="col-md-4 text-center">
-                <img src="./Images/IMG_20220710_064753_611.jpg" class="img-fluid" alt="profilePic" style="border-radius: 40%; width: 40vw; max-width: 18em;">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Haad Cheema</h5>
-                  <p class="card-text">Add Stuff Here</p>
+        <div class="card mb-4 bg-body-tertiary" style="padding: 15px; height: 75vw; max-height: 25em;">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="./Images/IMG_20220710_064753_611.jpg" class="img-fluid" alt="profilePic"
+                        style="border-radius: 40%; width: 35vw; max-width: 23em;">
                 </div>
-              </div>
+                <div class="col-md-8">
+                    <div class="card-body text-center">
+                        <h1 class="card-title fw-bold display-3">Haad Cheema</h1>
+                        <p class="card-text fw-normal text-muted mb-3">Computer Science Student at Iowa State University</p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
+
     <div id="Skills"></div>
     <div id="Projects"></div>
     <footer>
