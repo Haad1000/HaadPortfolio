@@ -2,6 +2,18 @@ body {
     padding-top: 70px;
 }
 
-#leButton {
-    align-self: flex-end;
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    padding: 10px;
+}
+
+.scroller {
+    max-width: 90vw;
+}
+
+.scrollerInner {
+    display: flex;
 }
