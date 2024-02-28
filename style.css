@@ -17,3 +17,25 @@ body {
 .scrollerInner {
     display: flex;
 }
+
+#social-button button {
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    margin: 5px;
+    border: 0;
+    transition: 0.5s;
+}
+
+#social-button button:hover {
+    background-color: #181818;
+    box-shadow: 0 5px 25px 12px #DEE2E6;
+    transform: translateY(-3px);
+    transition: 0.25s ease-in-out;
+}
+
+#social-button ul:hover button:not(:hover) {
+    box-shadow: 0 5px 25px 3px #AEB3B7;
+    transform: translateY(-1.5px);
+    transition: 0.25s ease-in-out;
+    filter: blur(1px);
+}
